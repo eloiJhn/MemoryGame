@@ -1,0 +1,431 @@
+* {
+    margin: 0;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+    background-color: #e6b8a2;
+    padding: 0;
+    border: none;
+    background-size: cover; /* Changed to cover */
+    overflow: auto;
+    
+  
+  }
+  
+  .breakpoint {
+    width: 1200px;
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #e6b8a2;
+    overflow: hidden;
+    padding: 0px;
+    align-content: center;
+    flex-wrap: nowrap;
+    gap: 0;
+    position: relative;
+    border-radius: 0px;
+    height: 100vh;
+    transform: scale(0.9);
+  
+  
+  }
+  
+  .hero {
+    box-sizing: border-box;
+    flex-shrink: 0;
+    width: 100%;
+    height: min-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+    background-color: #e6b8a2;
+    min-height: 600px;
+    overflow: hidden;
+    position: relative;
+    align-content: center;
+    flex-wrap: nowrap;
+    gap: 100px;
+    border-radius: 0px;
+    
+  
+  }
+  
+  .columns {
+    flex-shrink: 0;
+    flex: 1 0 0px;
+    width: 1px;
+    height: min-content; /* 470px */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    overflow: hidden;
+    position: relative;
+    padding: 0px 0px 0px 0px;
+    align-content: center;
+    flex-wrap: nowrap;
+    /* gap: 60; */
+    border-radius: 0px 0px 0px 0px;
+  }
+  
+  .grid {
+    flex-shrink: 0;
+    flex: 1 0 0px;
+    width: 60%; /* réduire la largeur à 60% */
+    height: 10%; /* réduire la hauteur à 60% */
+    display: grid;
+    overflow: hidden;
+    position: relative;
+    grid-template-columns: repeat(3, minmax(20px, 1fr));
+    justify-content: center;
+    grid-auto-rows: min-content;
+    grid-template-rows: repeat(2, min-content);
+    padding: 0px 0px 0px 0px;
+    gap: 10px;
+    border-radius: 0px 0px 0px 0px;
+    align-items: center;
+    background-size: cover; /* Changed to cover */
+  
+  }
+  
+  .image, .image2, .image3, .image4, .image5, .image6, .image7 {
+    margin: 0px;
+    position: relative;
+    height: 120px;
+  
+  }
+  
+  
+  .image {
+    flex-shrink: 0;
+    width: 200px;
+    display: block;
+    background-color: #000000;
+    overflow: hidden;
+    position: relative;
+    grid-column: auto / span 2;
+    justify-self: start;
+    align-self: start;
+    aspect-ratio: 2.1433566433566433 / 1;
+    border-radius: 0px 200px 200px 0px;
+  }
+  
+  .image2 {
+    flex-shrink: 0;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+    mix-blend-mode: luminosity;
+    aspect-ratio: 1 / 1;
+    background-image: url('Image2.png');
+    border-radius: 200px 200px 200px 0px;
+  
+  }
+  
+  
+  .image3 {
+    flex-shrink: 0;
+    display: block;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+    mix-blend-mode: luminosity;
+    overflow: hidden;
+    position: relative;
+    justify-self: start;
+    align-self: start;
+    aspect-ratio: 1 / 1;
+    background-image: url('Image3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 0px 200px 200px 0px;
+  }
+  
+  .image4 {
+    flex-shrink: 0;
+    display: block;
+    background-color: #000000;
+    overflow: hidden;
+    position: relative;
+    justify-self: start;
+    align-self: start;
+    aspect-ratio: 1 / 1;
+    border-radius: 0px 0px 0px 0px;
+  }
+  
+  .image5 {
+    flex-shrink: 0;
+    display: block;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+    mix-blend-mode: luminosity;
+    overflow: hidden;
+    position: relative;
+    justify-self: start;
+    align-self: start;
+    aspect-ratio: 1 / 1;
+    background-image: url('Image4.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 0px 0px 200px 0px;
+  }
+  
+  .image6 {
+    flex-shrink: 0;
+    display: block;
+    background-color: #000000;
+    overflow: hidden;
+    position: relative;
+    justify-self: start;
+    align-self: start;
+    aspect-ratio: 1 / 1;
+    border-radius: 100%;
+  }
+  
+  .image7 {
+    z-index: 3;
+    flex-shrink: 0;
+    display: block;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+    mix-blend-mode: luminosity;
+    overflow: hidden;
+    position: relative;
+    grid-column: auto / span 2;
+    justify-self: start;
+    align-self: start;
+    aspect-ratio: 2.1358885017421603 / 1;
+    background-image: url('Image.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 200px 200px 200px 0px;
+  }
+  
+  .connection {
+    flex-shrink: 0;
+    width: 100%;
+    height: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    word-break: break-word;
+    z-index: 1;
+    /* position: absolute; */
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Staatliches", sans-serif;
+    color: #ffffff;
+    font-size: px;
+    letter-spacing: 0em;
+    line-height: 1.1;
+    text-align: center;
+  }
+  
+  .text-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .image-container {
+    flex: 1;
+    /* other styles as needed... */
+  }
+  
+  .call-to-action {
+    box-sizing: border-box;
+    flex-shrink: 0;
+    width: 100%;
+    height: min-content; /* 749px */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Added justify-content: center */
+    align-items: center;
+    padding: 100px 100px 100px 100px;
+    background-color: #000000;
+    background-size: cover; /* Changed to cover */
+  
+    overflow: visible;
+    position: relative;
+    align-content: center;
+    flex-wrap: nowrap;
+    gap: 40;
+    border-radius: 0px 0px 0px 0px;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  .connexion, .call-to-action, .connection2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* your existing styles... */
+  }
+  
+  .connexion, .call-to-action, .connection2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  
+  
+  .connection2 {
+    flex: 1;  /* Allow this element to grow and shrink as needed */
+    display: flex;  /* Make this a flex container */
+    justify-content: center;  /* Center content horizontally */
+    align-items: center;  /* Center content vertically */
+    /* white-space: pre; */
+    overflow: visible;
+    z-index: 2;
+    position: relative;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Staatliches", sans-serif;
+    color: #3185fc;
+    font-size: 200.31px;
+    letter-spacing: 0em;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+  }
+  
+  
+  .decoration {
+    box-sizing: border-box;
+    flex-shrink: 0;
+    width: 570px;
+    height: 299px;
+    display: block;
+    overflow: hidden;
+    opacity: 0.3;
+    transform: rotate(-134deg);
+    z-index: 0;
+    /* position: absolute; */
+    border-radius: 100%;
+    border: 1px solid #3185FC;
+  }
+  
+  
+  
+  .button {
+    box-sizing: border-box;
+    flex-shrink: 0;
+    width: min-content; /* 90px */
+    height: min-content; /* 44px */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px 10px 20px;
+    background-color: #0099ff;
+    position: relative;
+    align-content: center;
+    flex-wrap: nowrap;
+    gap: 8;
+    border-radius: 10px;
+  }
+  
+  input[type="text"], input[type="password"] {
+    background: transparent;  /* make the background transparent */
+    border: none;  /* remove the default border */
+    border-bottom: 10px solid #ffffff;  /* add a bottom border */
+    color: #ffffff;  /* make the text color white */
+    padding: 10px 0;  /* add some padding */
+    outline: none;  /* remove the default outline */
+    width: 200px;  /* set a specific width */
+    font-size: 16px;  /* set the font size */
+    border: 2px solid rosybrown; /* Couleur de la bordure */
+    border-radius: 20px; /* Rayon des coins arrondis */
+    padding: 10px;
+  }
+  
+  input[type="password"]::placeholder {
+    color: white;
+  }
+  
+  input[type="text"]::placeholder {
+    color: white;
+  }
+  
+  .footer {
+    box-sizing: border-box;
+    flex-shrink: 0;
+    width: 100%;
+    height: min-content; /* 224px */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 72px 100px 72px 100px;
+    background-color: #e6b8a2;
+    overflow: visible;
+    position: relative;
+    align-content: center;
+    flex-wrap: nowrap;
+    gap: 0;
+    border-radius: 0px 0px 0px 0px;
+    border-color: rgba(0, 0, 0, 0.05);
+    border-style: solid;
+    border-top-width: 1px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+  }
+  
+  .icons {
+    flex-shrink: 0;
+    width: min-content; /* 136px */
+    height: min-content; /* 32px */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    padding: 0px 0px 0px 0px;
+    align-content: center;
+    flex-wrap: nowrap;
+    gap: 20;
+    border-radius: 0px 0px 0px 0px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  @media screen and (max-width: 800px) {
+    .hero {
+      padding: 50px 20px;
+    }
+  
+    .image {
+      height: 100px;
+    }
+  
+    .connection {
+      font-size: 40px;
+    }
+  }
+  

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/profil.css" />
+</head>
+<body>
+
+    <div class="logo-container">
+        <img src="../css/logoMemory.png" alt="Memory Game" width="300px">
+    </div>
+
+
+
+    
+
+    <div class="hero">
+        
+        <div class="icon-left">
+            <img src="../css/Geometry1.png" alt="">
+        </div>
+
+
+        <div class="profile">
+            Profile
+        </div>
+
+        <div class="icon-right">
+            <img src="../css/Geometry1.png" alt="">
+        </div>
+            <div class="round1">
+                <!-- Vous pouvez mettre du contenu ici -->
+            </div>
+            <div class="round2">
+                <!-- Vous pouvez mettre du contenu ici -->
+            </div>
+            <div class="round3">
+                <!-- Vous pouvez mettre du contenu ici -->
+            </div>
+            <div class="round4">
+                <!-- Vous pouvez mettre du contenu ici -->
+            </div>
+            <div class="round5">
+                <!-- Vous pouvez mettre du contenu ici -->
+            </div> 
+
+        </div>
+
+        <div class="section2">
+            <div class="left-side">
+                <div class="profil">
+                    <p>Profil details</p>
+                </div>
+                <div class="mon-texte">
+                    <p>Mon texte pour changer de nom et d'adresse mail</p>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="Nickname">
+                    <div class="inputs-line">
+                        <input type="text" value="Nickname" readonly>
+                        <input type="text" value="pseudo" class="pseudo">
+                    </div>
+                </div>                
+                <div class="button-nickname">
+                    <input type="button" value="Change Nickname">
+                </div>
+                <div class="Email">
+                    <div class="inputs-line">
+                    <input type="text" value="Email">
+                    <input type="text" value="mon Email" class="email">
+                    </div>
+                </div>
+                <div class="button-email">
+                    <input type="button" value="Change Email">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="section3">
+            <div>
+                <div class="logo-container-profil">
+                   <img id="profile-pic" src="../css/profil3.png" alt="Memory Game">
+                    <p>Choose a profil picture : </p>                   
+                    <select id="logo-select">
+                        <option data-logo="../css/logoProfil.png">Image1</option>
+                        <option data-logo="../css/logoProfil2.png">Image2</option>
+                        <option data-logo="../css/logoProfil3.png">Image3</option>
+                        <option data-logo="../css/logoProfil4.png">Image4</option>
+                    </select>
+                  </div>
+            </div>
+
+        <script>
+
+document.querySelectorAll('#logo-select option').forEach(function(option) {
+  option.addEventListener('mouseover', function() {
+    document.getElementById('profil-pic ').src = this.dataset.logo;
+  });
+});
+
+
+            // document.getElementById('file-input').addEventListener('change', function(e) {
+            // var reader = new FileReader();
+            // reader.onload = function(e) {
+            // document.getElementById('profile-pic').src = e.target.result;
+            //     }
+            // reader.readAsDataURL(this.files[0]);
+            // });
+
+            // document.getElementById('file-input').addEventListener('change', function(e) {
+//   var reader = new FileReader();
+//   reader.onload = function(e) {
+//     var img = new Image();
+//     img.onload = function() {
+//       if(this.width !== 128 || this.height !== 128) {
+//         alert('Please upload an image of size 300x300.');
+//       } else {
+//         document.getElementById('profile-pic').src = e.target.result;
+//       }
+//     }
+//     img.src = e.target.result;
+//   }
+//   reader.readAsDataURL(this.files[0]);
+// });
+
+
+        </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+ /* créer une opacity sur nous pair quand c'est les mêmes */
+ .pair {
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+/* rajouter une carte face caché pour notre jeu */
+.back {
+    content: url("http://www.hearthstone-decks.com/upload/news/2014/juin/02/dos-carte-hearthstone-coin-feu.jpg");
+    background-color: transparent;
+}
+
+
+/* aligne mes photos en lignes*/
+#mainContainer
+{
+    display: flex;
+    flex-wrap: wrap; 
+    /* le flew wrap permet à mes photos d'être ffichés sur plusieurs lignes 
+    avec un retour automatique*/
+    gap : 10px;
+    /* le gap permet de définir les espaces entre mes lignes et colonnes de mes images */
+} 
+
+/* permet de gérer la taille de mes images retournés */
+img {
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+    border-radius: 30px;
+    
+}

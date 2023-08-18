@@ -1,0 +1,354 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  background-color: #e6b8a2;
+  font-family: Arial, sans-serif;
+}
+
+
+.logo-container {
+  position: fixed;
+  left: 0;
+  top: -70px;
+  z-index: 1000; /* Ceci assure que le logo est toujours au-dessus des autres éléments */
+  margin-left: -100px;
+}
+
+.logo-container-profil {
+  position: fixed;
+  right: 0;
+  top: 10px;
+  z-index: 1000; /* Ceci assure que le logo est toujours au-dessus des autres éléments */
+  width: 300px;
+  margin-right: -230px;
+
+}
+
+
+
+
+/* Navbar */
+.navbar {
+  background-color: #e6b8a2;
+  height: 60px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 30px;
+  position: fixed;  /* Ajoutez cette ligne */
+  width: 100%;  /* Ajoutez cette ligne */
+  top: 0;  /* Ajoutez cette ligne */
+  z-index: 1000;  /* Ajoutez cette ligne */
+}
+
+
+.navbar-href {
+  color: #fff;
+  /* text-decoration: none; */
+  /* font-size: 24px; */
+  margin: 1300px; /* Ajoutez une marge à gauche pour déplacer le texte vers la gauche */
+
+}
+
+
+
+/* Buttons */
+.button1, .button2, .button3, .button4 {
+  transition: background-color 0.3s ease;
+}
+
+.button1:hover, .button2:hover, .button3:hover, .button4:hover {
+  background-color: #ddd;
+  color: #000;
+}
+
+
+/* Footer */
+.footer {
+  background-color: #e6b8a2;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  background-color: #333;
+
+}
+
+/* New style for the centered container */
+.centered-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  
+}
+
+.hero {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 100vh; /* Changed from height to min-height */
+  padding-bottom: 60px; /* Added this line */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e6b8a2;
+}
+
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative; /* Added this line */
+
+}
+
+.text-container-hero {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1px;
+  padding-top: 50px;
+  
+}
+
+.image-hero {
+  padding-top: 100px;
+  width: 450px;
+  height: 400px;
+  display: flex;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  mix-blend-mode: luminosity;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  
+}
+
+.image-hero img {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 0 500px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+
+.button-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  flex-direction: row;
+  
+}
+
+.button1, .button2 {
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: "Albert Sans", sans-serif;
+  color: white;
+  background-color: #9d6b53;
+  margin: 0 10px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+}
+
+
+.button1:hover,
+.button2:hover {
+  background-color: #9d6b53;
+}
+
+.text-container-hero {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@font-face {
+  font-family: 'Momcake';
+  src: url('Momcake-Regular.otf');  /* Ajustez le chemin si nécessaire */
+}
+
+
+.memory-game {
+  font-family: "Momcake", sans-serif;
+  font-size: 50px;
+  text-align: center;
+  white-space: pre;
+  position: relative;
+  line-height: 1;
+  letter-spacing: 0em;
+  
+
+}
+
+
+
+
+
+
+
+
+
+
+.section2 {
+  box-sizing: border-box;
+  flex-shrink: 0;
+  width: 100%;
+  height: min-content; /* 749px */
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center; 
+  background-color:  #e6b8a2;
+  background-size: cover; /* Changed to cover */
+  overflow: visible;
+  position: relative;
+  align-content: center;
+  flex-wrap: nowrap;
+  gap: 40;
+  border-radius: 0px 0px 0px 0px;
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between; /* Space out the game mode and advanced option containers */
+  align-items: center; /* Vertically align the containers */
+  background-color:  #e6b8a2;
+  padding: 20px; /* réduire padding à 20px */
+
+
+
+  
+}
+
+.container {
+display: flex;
+flex-direction: row;
+
+}
+
+
+.game-modes, .advanced-options {
+  flex: 1;  /* Allow this element to grow and shrink as needed */
+  display: flex;  /* Make this a flex container */
+  justify-content: center;  /* Center content horizontally */
+  align-items: center;  /* Center content vertically */
+  /* white-space: pre; */
+  overflow: visible;
+  z-index: 1;
+  position: relative;
+  font-weight: 100;
+  font-family: "Staatliches", sans-serif;
+  font-size: 30px;
+  letter-spacing: 0em;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.image2, .image3 {
+  flex-shrink: 0;
+  width: 209px;
+  height: 282px;
+  display: block;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  mix-blend-mode: luminosity;
+  overflow: hidden;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 20px;
+
+  
+}
+
+.button3, .button4 {
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: "Albert Sans", sans-serif;
+  color: white;
+  background-color: #9d6b53;
+  margin: 0 10px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+}
+
+
+
+
+.game-mode-container, .advanced-option-container {
+  display: flex;
+  flex-direction: column; /* Stack the text, image, and button vertically */
+  align-items: center; /* Horizontally center the text, image, and button */
+  width: 40%; /* Give the containers some width */
+  padding: 30px;
+
+  
+}
+
+
+
+
+.game-modes, .advanced-options {
+  font-family: "Staatliches", sans-serif;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px; /* Add some space below the text */
+}
+
+.image2, .image3 {
+  margin-bottom: 20px; /* Add some space below the images */
+  
+}
+
+
+
+.button3, .button4 {
+  padding: 15px 15px;
+  border-radius: 8px;
+  color: white;
+}
+
+
+
+
+.icons {
+  flex-shrink: 0;
+  width: min-content; /* 136px */
+  height: min-content; /* 32px */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  padding: 0px 0px 0px 0px;
+  align-content: center;
+  flex-wrap: nowrap;
+  gap: 20;
+  border-radius: 0px 0px 0px 0px;
+}
